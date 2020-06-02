@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Classifier</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}"/>
+</head>
+
+
+<body>
+
+    <p><h1>
+        <i class="material-icons md-48">
+        text_search
+        </i>
+        Data Labelling Tool
+    </h1></p>
+
+    <form action="display" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="input_file" accept="cv_file/*"/>
+        <label for="file">
+            <i class="material-icons">
+                add_photo_alternate
+            </i>
+            Upload a cv
+        </label>
+        <button id='predict' type="submit">Predict</button>
+    </form>
+
+    
+
+    <h1>{{ prediction }}</h1>
+
+
+
+</body>
+
+
+</html>
