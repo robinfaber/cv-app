@@ -4,13 +4,8 @@
 
 import os
 import pickle
-
 from flask import Flask, request, render_template
-
-
 import docx
-
-
 import tensorflow as tf
 import numpy as np
 from keras.preprocessing.sequence import pad_sequences
@@ -47,11 +42,11 @@ with open('assets/tokenizer.pickle', 'rb') as handle:
     TOKENIZER = pickle.load(handle)
 
 # labels
-LABELS = ['data scientist', 'sales manager', 'front-office manager', 'front-end developer']
+LABELS = ['data analyst', 'event manager', 'marketing manager', 'sales manager']
 
 # parameters
 STOPWORDS = set(stopwords.words('english'))
-MAX_LENGTH = 1000
+MAX_LENGTH = 5000
 TRUNC_TYPE = 'post'
 PADDING_TYPE = 'post'
 
