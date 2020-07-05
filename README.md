@@ -9,6 +9,11 @@ In this project I used the following python libraries:
     <li>Flask: for building the app</li>
 </ul>
 
+## Visual
+
+![](cv-app.gif)
+
+
 ## Limitations
 
 This project has some limitations:
