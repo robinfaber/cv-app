@@ -90,4 +90,4 @@ def display():
 
 if __name__ == '__main__':
 
-    APP.run(host='0.0.0.0', debug=True, port=PORT)
+    APP.run(host='0.0.0.0', debug=False, port=PORT)
