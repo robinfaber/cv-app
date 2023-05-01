@@ -1,4 +1,4 @@
-Flask==1.1.1
+Flask==2.3.2
 python-docx==0.8.10
 tensorflow==2.0.0a0
 numpy==1.16.6
